@@ -8,10 +8,12 @@ To write a program to implement the K Means Clustering for Customer Segmentation
 2. Anaconda – Python 3.7 Installation / Jupyter notebook
 
 ## Algorithm
-1. 
-2. 
-3. 
-4. 
+```
+1. import necessary libraries
+2.load the dataset and define the features and target the variables 
+3. split the dataset into training and testing sets, train the model to the dataset
+4. make predictions on dataset,evaluate the model
+```
 
 ## Program:
 ```
@@ -22,7 +24,7 @@ RegisterNumber:24000337
 */
 ```
 
-
+```
 import pandas as pd
 import matplotlib.pyplot as plt
 data = pd.read_csv("Mall_Customers.csv")
@@ -56,7 +58,7 @@ plt.scatter(df3["Annual Income (k$)"], df3["Spending Score (1-100)"], c="green",
 plt.scatter(df4["Annual Income (k$)"], df4["Spending Score (1-100)"], c="magenta", label="Cluster 4")
 plt.legend()
 plt.title("Customer Segments")
- 
+```
 ## Output:
 
 ![Screenshot 2024-12-18 203555](https://github.com/user-attachments/assets/9c051ed2-9e6a-47cd-b247-6e9f91aab0ba)
